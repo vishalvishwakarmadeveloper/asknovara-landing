@@ -13,6 +13,12 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
+## Deploy (Dokploy or any Docker host)
+
+The repo has a `Dockerfile` that serves the site with nginx on port 80. No environment variables are needed.
+
+In Dokploy: Build Type **Dockerfile**, Dockerfile path `Dockerfile`, and in Domains set the container port to **80**.
+
 ## Before going live
 
 - Replace every `***********` in `privacy.html` and `terms.html` with the real company details: legal name, company number, registered office, ICO number and contact email. `cookies.html` also has one, for the contact email.
