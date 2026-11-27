@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask Novara - Your idea. Our team. A real product.</title>
+  <meta name="description" content="Ask Novara builds SaaS, IaaS and AI-automated products for founders and businesses - and helps SaaS companies upsell and scale. 100+ SaaS products live across the UK, US and beyond." />
+  <meta name="theme-color" content="#0a1215" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin />
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap 5 + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Tailwind (prefixed tw- so it never collides with Bootstrap) -->
+  <script>
+    window.tailwind = window.tailwind || {};
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { prefix: 'tw-', corePlugins: { preflight: false } };
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/legal.css" />
+  <script>document.documentElement.classList.remove('no-js');</script>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="d-flex justify-content-between">
+      <span class="tag">Ask Novara</span>
+      <span class="tag">Idea → Product</span>
+    </div>
+    <div>
+      <div class="count"><span id="loadNum">0</span>%</div>
+      <div class="bar mt-4"><span id="loadBar"></span></div>
+    </div>
+  </div>
+
+  
+  <!-- ================= NAV ================= -->
+  <header class="nav-n" id="nav">
+    <div class="wrap inner">
+      <a href="#top" class="brand" aria-label="Ask Novara home">
+        <span class="word">ask<em>/</em></span><img class="logo-novara" src="assets/img/novara-logo.svg" width="160" height="28" alt="novara" />
+      </a>
+
+      <nav class="d-none d-lg-block" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#build">What we build</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#growth">SaaS growth</a></li>
+          <li><a href="#automations">AI automations</a></li>
+          <li><a href="#global">Global</a></li>
+        </ul>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <a href="#contact" class="btn-n d-none d-sm-inline-flex" data-magnetic>Ask Novara <span class="ico"><i class="bi bi-arrow-up-right"></i></span></a>
+        <button class="burger d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#menu" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end menu-n" tabindex="-1" id="menu" aria-label="Menu">
+    <div class="offcanvas-header px-4 py-3">
+      <span class="brand"><span class="word">ask<em>/</em></span><img class="logo-novara" src="assets/img/novara-logo.svg" width="160" height="28" alt="novara" /></span>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-4">
+      <a class="m-link" href="#build" data-bs-dismiss="offcanvas">What we build <small>01</small></a>
+      <a class="m-link" href="#process" data-bs-dismiss="offcanvas">Process <small>02</small></a>
+      <a class="m-link" href="#growth" data-bs-dismiss="offcanvas">SaaS growth <small>03</small></a>
+      <a class="m-link" href="#automations" data-bs-dismiss="offcanvas">AI automations <small>04</small></a>
+      <a class="m-link" href="#global" data-bs-dismiss="offcanvas">Global <small>05</small></a>
+      <a href="#contact" class="btn-n mt-5 w-100 justify-content-between" data-bs-dismiss="offcanvas">Book a 1:1 <span class="ico"><i class="bi bi-arrow-up-right"></i></span></a>
+      <div class="m-legal d-flex gap-3 mt-4"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></div>
+    </div>
+  </div>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-media" data-speed="0.3">
+        <img class="kb" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2400&q=80" alt="" fetchpriority="high" />
+      </div>
+      <div class="hero-grid"></div>
+      <div class="scroll-cue">Scroll</div>
+
+      <div class="wrap">
+        <span class="tag hero-in">SaaS · IaaS · AI Automation - Product studio</span>
+
+        <h1 class="display hero-title mt-4">
+          <span class="line"><span>Got the idea?</span></span>
+          <span class="line"><span><span class="outline">We'll</span> build</span></span>
+          <span class="line"><span>the <span class="hl">product.</span></span></span>
+        </h1>
+
+        <div class="row align-items-end g-4 mt-2">
+          <div class="col-lg-6">
+            <p class="hero-sub hero-in mb-4">
+              Ask Novara turns founder ideas into real, revenue-ready SaaS - and helps existing SaaS businesses upsell, retain and scale. No team? No resources? That's exactly where we come in.
+            </p>
+            <form class="askbar hero-in" id="askForm" autocomplete="off">
+              <span class="pre">ask novara ›</span>
+              <input id="askInput" type="text" aria-label="Describe your idea" placeholder="" />
+              <button class="btn-n" type="submit">Ask <span class="ico"><i class="bi bi-arrow-right"></i></span></button>
+            </form>
+          </div>
+          <div class="col-lg-5 offset-lg-1 hero-in">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-flex flex-shrink-0 me-1">
+                <img class="rounded-circle border border-2 border-dark" width="40" height="40" style="object-fit:cover" src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&crop=faces&w=120&h=120&q=70" alt="" />
+                <img class="rounded-circle border border-2 border-dark" width="40" height="40" style="object-fit:cover;margin-left:-12px" src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&crop=faces&w=120&h=120&q=70" alt="" />
+                <img class="rounded-circle border border-2 border-dark" width="40" height="40" style="object-fit:cover;margin-left:-12px" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&crop=faces&w=120&h=120&q=70" alt="" />
+              </div>
+              <p class="m-0 small" style="color:rgba(255,255,255,.7)">Founders in <b class="text-white">London, New York, Dubai &amp; Toronto</b> shipped with us this year.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-foot">
+          <div class="row g-0">
+            <div class="col-6 col-lg-3 stat"><div class="num"><span data-count="100">0</span><sup>+</sup></div><p>SaaS products live &amp; earning across major markets</p></div>
+            <div class="col-6 col-lg-3 stat"><div class="num"><span data-count="100">0</span><sup>+</sup></div><p>AI automations ready to plug into your business</p></div>
+            <div class="col-6 col-lg-3 stat"><div class="num">UK·US</div><p>Plus UAE, Canada, Australia, Germany &amp; India</p></div>
+            <div class="col-6 col-lg-3 stat"><div class="num">1:1</div><p>Direct founder sessions - idea to roadmap, no sales script</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="track">
+        <span class="item">Software as a Service <i></i></span>
+        <span class="item">Infrastructure as a Service <i></i></span>
+        <span class="item">AI Agents &amp; Automation <i></i></span>
+        <span class="item">MVP in weeks <i></i></span>
+        <span class="item">SaaS Upsell Engines <i></i></span>
+        <span class="item">Cloud &amp; DevOps <i></i></span>
+        <span class="item">Software as a Service <i></i></span>
+        <span class="item">Infrastructure as a Service <i></i></span>
+        <span class="item">AI Agents &amp; Automation <i></i></span>
+        <span class="item">MVP in weeks <i></i></span>
+        <span class="item">SaaS Upsell Engines <i></i></span>
+        <span class="item">Cloud &amp; DevOps <i></i></span>
+      </div>
+    </div>
+
+    <!-- ================= MANIFESTO ================= -->
+    <section class="section manifesto on-paper" id="about">
+      <div class="wrap">
+        <div class="row g-5">
+          <div class="col-lg-3"><span class="tag on-light">Why we exist</span></div>
+          <div class="col-lg-9">
+            <p class="big" id="manifesto">Great ideas don't die from bad timing. They die waiting for a team, a budget and a technical co‑founder that never shows up. Ask Novara is that team - strategists, designers, engineers and AI specialists who take your idea from a napkin sketch to a *live* *product* with paying customers.</p>
+            <div class="row mt-5 g-4">
+              <div class="col-md-6"><p class="muted m-0">We've built and scaled <b class="text-dark">100+ SaaS models</b> now running in the UK, US and other major markets - so you're not paying for experiments, you're borrowing a proven playbook.</p></div>
+              <div class="col-md-6 d-flex align-items-start justify-content-md-end"><a href="#contact" class="btn-n dark-btn" data-magnetic>Start a 1:1 discussion <span class="ico"><i class="bi bi-arrow-up-right"></i></span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHAT WE BUILD ================= -->
+    <section id="build">
+      <div class="cap ink-row">
+        <div class="media"><img data-parallax src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=1600&q=80" alt="SaaS analytics dashboard close-up" loading="lazy" /><span class="badge-n"><b>01</b> / SaaS</span></div>
+        <div class="body">
+          <div class="reveal">
+            <span class="tag">[ Software as a Service ]</span>
+            <h3 class="display">Launch a SaaS your customers pay for monthly.</h3>
+            <p class="lead-n">Multi-tenant platforms, subscription billing, dashboards and admin - designed, built and shipped by one accountable team.</p>
+          </div>
+          <ul class="idx-list reveal">
+            <li><span>Product discovery &amp; validation</span><span>[01]</span></li>
+            <li><span>UX / UI &amp; design systems</span><span>[02]</span></li>
+            <li><span>Multi-tenant architecture</span><span>[03]</span></li>
+            <li><span>Billing, plans &amp; Stripe integration</span><span>[04]</span></li>
+            <li><span>MVP to v1 in 8-12 weeks</span><span>[05]</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap light-row reverse">
+        <div class="media"><img data-parallax src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80" alt="Circuit board macro" loading="lazy" /><span class="badge-n"><b>02</b> / IaaS</span></div>
+        <div class="body">
+          <div class="reveal">
+            <span class="tag on-light">[ Infrastructure as a Service ]</span>
+            <h3 class="display">Infrastructure that scales before you need it to.</h3>
+            <p class="lead-n">Cloud foundations on AWS, Azure and GCP - secure, observable and cost-tuned, so growth never breaks your product.</p>
+          </div>
+          <ul class="idx-list reveal">
+            <li><span>Cloud architecture &amp; migration</span><span>[01]</span></li>
+            <li><span>DevOps, CI/CD &amp; IaC</span><span>[02]</span></li>
+            <li><span>Security, SOC2 &amp; GDPR readiness</span><span>[03]</span></li>
+            <li><span>Cost optimisation &amp; FinOps</span><span>[04]</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cap dark-row">
+        <div class="media"><img data-parallax src="https://images.unsplash.com/photo-1639322537228-f710d846310a?auto=format&fit=crop&w=1600&q=80" alt="Abstract network of connected nodes" loading="lazy" /><span class="badge-n"><b>03</b> / AI</span></div>
+        <div class="body">
+          <div class="reveal">
+            <span class="tag">[ AI Products &amp; Agents ]</span>
+            <h3 class="display">AI built into the product, not bolted on.</h3>
+            <p class="lead-n">Copilots, agents and intelligent workflows that make your SaaS stickier - and your team ten times faster.</p>
+          </div>
+          <ul class="idx-list reveal">
+            <li><span>AI agents &amp; copilots</span><span>[01]</span></li>
+            <li><span>RAG, search &amp; knowledge bases</span><span>[02]</span></li>
+            <li><span>Workflow &amp; ops automation</span><span>[03]</span></li>
+            <li><span>Data pipelines &amp; analytics</span><span>[04]</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STUCK? ================= -->
+    <section class="section stuck" id="one-to-one">
+      <div class="wrap">
+        <div class="row align-items-center g-4 mb-5">
+          <div class="col-lg-7">
+            <span class="tag on-light">Sound familiar?</span>
+            <h2 class="display mt-3" style="font-size:clamp(36px,5vw,76px)">You have the idea.<br />You're just <span class="hl">stuck.</span></h2>
+          </div>
+          <div class="col-lg-4 offset-lg-1"><p class="muted m-0">Most founders aren't short on vision. They're short on people, time and the technical depth to execute. Here's what we hear every week - and how we fix it.</p></div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-3 reveal"><div class="stuck-card"><span class="n">[ blocker 01 ]</span><h4>"I don't have a tech team."</h4><p><span class="strike">Hire 6 people</span> - plug into ours from day one.</p></div></div>
+          <div class="col-md-6 col-lg-3 reveal"><div class="stuck-card"><span class="n">[ blocker 02 ]</span><h4>"Budget is tight."</h4><p><span class="strike">Burn runway</span> - phased builds that ship value early.</p></div></div>
+          <div class="col-md-6 col-lg-3 reveal"><div class="stuck-card"><span class="n">[ blocker 03 ]</span><h4>"Not sure it'll sell."</h4><p><span class="strike">Guess</span> - validate with real users before scaling.</p></div></div>
+          <div class="col-md-6 col-lg-3 reveal"><div class="stuck-card answer"><span class="n">[ the answer ]</span><h4>Ask Novara.</h4><p>One partner for strategy, product, engineering, cloud and growth.</p></div></div>
+        </div>
+
+        <div class="one-on-one reveal">
+          <div class="l">
+            <div>
+              <span class="tag">Client acquisition - 1:1</span>
+              <h3 class="display mt-3" style="font-size:clamp(28px,3.4vw,50px)">Talk to the people who'll actually build it.</h3>
+              <p class="mt-3 mb-0" style="color:rgba(255,255,255,.72);max-width:46ch">A free 45-minute 1:1 with a Novara product lead. Bring the idea - leave with a scope, a stack recommendation and a realistic launch timeline.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#contact" class="btn-n" data-magnetic>Book my 1:1 <span class="ico"><i class="bi bi-calendar2-check"></i></span></a>
+              <a href="#process" class="btn-n ghost">See how it works <span class="ico"><i class="bi bi-arrow-down"></i></span></a>
+            </div>
+          </div>
+          <div class="r">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1400&q=80" alt="Founder working through a product plan" loading="lazy" />
+            <div class="slot">
+              <span class="dot"></span>
+              <div class="flex-grow-1"><b>Next available 1:1</b><small id="nextSlot">Tomorrow · 10:30 GMT</small></div>
+              <i class="bi bi-arrow-up-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS (horizontal) ================= -->
+    <section class="process" id="process">
+      <div class="wrap process-head">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="tag">From idea to income</span>
+            <h2 class="display mt-3" style="font-size:clamp(36px,5vw,76px)">Five steps. <span class="hl">One team.</span></h2>
+          </div>
+          <div class="col-lg-4 offset-lg-1"><p class="muted m-0">A process refined across 100+ launches. Transparent sprints, weekly demos, and a product you own outright.</p></div>
+        </div>
+      </div>
+      <div class="h-wrap" id="hWrap">
+        <div class="h-track" id="hTrack">
+          <article class="step"><div class="big-n">01</div><div><h4>Ask</h4><p>1:1 discovery call. We pressure-test the idea, the market and the money.</p><div class="chips"><span class="chip">Week 0</span><span class="chip">Free</span><span class="chip">Founder-led</span></div></div></article>
+          <article class="step"><div class="big-n">02</div><div><h4>Shape</h4><p>Scope, user journeys, clickable prototype and a fixed roadmap.</p><div class="chips"><span class="chip">1-2 weeks</span><span class="chip">Figma</span><span class="chip">Validation</span></div></div></article>
+          <article class="step"><div class="big-n">03</div><div><h4>Build</h4><p>Engineering sprints with weekly demos. Cloud, security and AI baked in.</p><div class="chips"><span class="chip">6-10 weeks</span><span class="chip">Next.js</span><span class="chip">AWS</span><span class="chip">AI</span></div></div></article>
+          <article class="step"><div class="big-n">04</div><div><h4>Launch</h4><p>Go-to-market, onboarding flows, billing live, analytics wired.</p><div class="chips"><span class="chip">Launch week</span><span class="chip">GTM</span><span class="chip">Stripe</span></div></div></article>
+          <article class="step final"><div class="big-n">05</div><div><h4>Scale &amp; upsell</h4><p>Expansion revenue, pricing tiers, AI add-ons and automation - we stay to grow it.</p><div class="chips"><span class="chip">Ongoing</span><span class="chip">NRR</span><span class="chip">Retention</span></div></div></article>
+        </div>
+        <div class="progress-line"><span id="hProg"></span></div>
+      </div>
+    </section>
+
+    <!-- ================= SAAS GROWTH / UPSELL ================= -->
+    <section class="section growth" id="growth">
+      <div class="wrap">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5">
+            <span class="tag on-light">Already running a SaaS?</span>
+            <h2 class="display mt-3" style="font-size:clamp(34px,4.4vw,64px)">Sell more to the customers you already have.</h2>
+            <p class="muted mt-4">New logos are expensive. Expansion revenue isn't. We engineer the upsell - pricing, product-led triggers and AI add-ons that lift revenue per account.</p>
+
+            <div class="mt-4">
+              <div class="lever reveal"><span class="k">[01]</span><div><h5>Pricing &amp; packaging</h5><p>Tiering, usage-based add-ons and seat expansion that customers say yes to.</p></div></div>
+              <div class="lever reveal"><span class="k">[02]</span><div><h5>Product-led upsell triggers</h5><p>In-app moments that surface upgrades exactly when value is felt.</p></div></div>
+              <div class="lever reveal"><span class="k">[03]</span><div><h5>AI premium features</h5><p>New paid modules built on your data - copilots, insights, automation.</p></div></div>
+              <div class="lever reveal"><span class="k">[04]</span><div><h5>Retention &amp; churn rescue</h5><p>Health scoring and lifecycle automation that keeps accounts growing.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="chart-card reveal">
+              <div class="top">
+                <span class="tag">Monthly recurring revenue</span>
+                <span class="chip">+ upsell engine</span>
+              </div>
+              <div class="bars" id="bars">
+                <div data-h="22"></div><div data-h="26"></div><div data-h="29"></div><div data-h="31"></div><div data-h="34"></div>
+                <div class="after" data-h="42"></div><div class="after" data-h="51"></div><div class="after" data-h="60"></div><div class="after" data-h="71"></div><div class="after" data-h="83"></div><div class="after peak" data-h="96"></div>
+              </div>
+              <div class="legend"><span><i></i>Before Novara</span><span><i class="s"></i>After upsell programme</span></div>
+            </div>
+            <div class="row g-4 mt-4">
+              <div class="col-sm-4 reveal"><div class="metric"><div class="v"><span data-count="38">0</span>%</div><p>Average lift in expansion revenue</p></div></div>
+              <div class="col-sm-4 reveal"><div class="metric"><div class="v"><span data-count="124">0</span>%</div><p>Net revenue retention reached</p></div></div>
+              <div class="col-sm-4 reveal"><div class="metric"><div class="v"><span data-count="3">0</span>x</div><p>Faster feature-to-revenue cycle</p></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= AI AUTOMATIONS ================= -->
+    <section class="section auto" id="automations">
+      <div class="wrap">
+        <div class="row align-items-center g-4">
+          <div class="col-12">
+            <span class="tag">AI automation library</span>
+            <div class="count-xl mt-3"><span data-count="100">0</span>+</div>
+          </div>
+          <div class="col-lg-6 offset-lg-6">
+            <h2 class="display" style="font-size:clamp(26px,2.8vw,40px)">AI automations ready to work for your business.</h2>
+            <p class="mt-3 mb-0" style="color:rgba(255,255,255,.7)">Pre-built, battle-tested and customisable. All you have to do is <b class="text-white">Ask Novara.</b></p>
+          </div>
+        </div>
+
+        <div class="filters mt-5" id="filters">
+          <button class="active" data-f="all">All</button>
+          <button data-f="sales">Sales</button>
+          <button data-f="marketing">Marketing</button>
+          <button data-f="ops">Operations</button>
+          <button data-f="finance">Finance</button>
+          <button data-f="support">Support</button>
+          <button data-f="hr">HR</button>
+        </div>
+
+        <div class="auto-grid mt-4" id="autoGrid"></div>
+      </div>
+
+      <div class="mt-5">
+        <div class="auto-rail"><div class="track" id="rail1"></div></div>
+        <div class="auto-rail rev"><div class="track" id="rail2"></div></div>
+      </div>
+    </section>
+
+    <!-- ================= GLOBAL ================= -->
+    <section class="section global" id="global">
+      <div class="wrap">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <span class="tag">Global footprint</span>
+            <h2 class="display mt-3" style="font-size:clamp(34px,4.4vw,64px)">100+ SaaS models. Running worldwide.</h2>
+            <p class="muted mt-3 mb-4">Products we've designed and engineered are live and serving customers across the world's most demanding markets.</p>
+            <div id="countries">
+              <div class="country"><span class="code">GB</span><div><div class="name">United Kingdom</div><div class="meter"><span data-w="92"></span></div></div><span class="v">38</span></div>
+              <div class="country"><span class="code">US</span><div><div class="name">United States</div><div class="meter"><span data-w="80"></span></div></div><span class="v">31</span></div>
+              <div class="country"><span class="code">AE</span><div><div class="name">UAE</div><div class="meter"><span data-w="34"></span></div></div><span class="v">11</span></div>
+              <div class="country"><span class="code">CA</span><div><div class="name">Canada</div><div class="meter"><span data-w="26"></span></div></div><span class="v">8</span></div>
+              <div class="country"><span class="code">AU</span><div><div class="name">Australia &amp; EU</div><div class="meter"><span data-w="38"></span></div></div><span class="v">12+</span></div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="globe-stage">
+              <div id="globe" class="globe" aria-label="Rotating globe showing Novara SaaS hubs"></div>
+              <div class="globe-hud">
+                <span class="tag">Live hubs</span>
+                <div class="hud-row"><b id="hubName">London</b><span id="hubCount">38 products</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="section quotes" id="stories">
+      <div class="wrap">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-4 mb-5">
+          <div>
+            <span class="tag on-light">Founders, in their words</span>
+            <h2 class="display mt-3" style="font-size:clamp(34px,4.4vw,64px)">Ideas we turned real.</h2>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="sq-btn" data-bs-target="#qCarousel" data-bs-slide="prev" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+            <button class="sq-btn" data-bs-target="#qCarousel" data-bs-slide="next" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div id="qCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-3">
+                <div class="col-lg-6"><div class="q-card h-100"><span class="res">MVP in 9 weeks</span><blockquote>"I had a deck and a Notion doc. Nine weeks later we had paying customers in London and Manchester. Novara felt like my own engineering team."</blockquote><div class="who"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&crop=faces&w=160&h=160&q=70" alt="" /><div><b>Amara Okafor</b><small>Founder, PropertyOps SaaS · UK</small></div></div></div></div>
+                <div class="col-lg-6"><div class="q-card h-100"><span class="res">+41% expansion MRR</span><blockquote>"Their upsell programme paid for itself in a quarter. The AI add-on they built is now our highest-margin plan."</blockquote><div class="who"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&crop=faces&w=160&h=160&q=70" alt="" /><div><b>Daniel Brooks</b><small>CEO, B2B HR platform · US</small></div></div></div></div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-3">
+                <div class="col-lg-6"><div class="q-card h-100"><span class="res">60 hrs/week saved</span><blockquote>"We switched on twelve automations from their library in a fortnight. Ops went from firefighting to forecasting."</blockquote><div class="who"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&crop=faces&w=160&h=160&q=70" alt="" /><div><b>Sara Haddad</b><small>COO, Logistics SaaS · UAE</small></div></div></div></div>
+                <div class="col-lg-6"><div class="q-card h-100"><span class="res">Zero-downtime migration</span><blockquote>"They rebuilt our infrastructure on AWS while customers were live. Costs dropped by a third and we finally sleep at night."</blockquote><div class="who"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=160&h=160&q=70" alt="" /><div><b>Mark Ellison</b><small>CTO, FinTech · Canada</small></div></div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section faq pt-0" id="faq" style="background:var(--paper)">
+      <div class="wrap">
+        <div class="row g-5">
+          <div class="col-lg-4"><span class="tag on-light">Questions</span><h2 class="display mt-3" style="font-size:clamp(30px,3.4vw,52px)">Before you ask.</h2></div>
+          <div class="col-lg-8">
+            <div class="accordion" id="faqAcc">
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#f1">I only have an idea - is that enough?</button></h3><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">Absolutely. Most of our founders start with nothing more than an idea. Your 1:1 session turns it into a scoped product plan with costs and timelines.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f2">Who owns the code and IP?</button></h3><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">You do - 100%. Code, designs, infrastructure and data are yours from the first commit.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f3">How fast can you launch an MVP?</button></h3><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Typically 8-12 weeks from kickoff to a live, billable product, depending on scope and integrations.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f4">Can you help an existing SaaS grow?</button></h3><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Yes. We run upsell and retention programmes - pricing, product-led triggers, AI add-ons and automation - for SaaS businesses already in market.</div></div></div>
+              <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#f5">Which markets do you work with?</button></h3><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Primarily the UK and US, plus the UAE, Canada, Australia, the EU and India. We work across time zones with overlapping hours.</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <span class="tag">Your move</span>
+            <h2 class="display big-cta mt-3">Just <span class="hl">ask.</span></h2>
+            <p class="mt-4" style="color:rgba(255,255,255,.72);max-width:44ch">Tell us about the idea or the SaaS you want to grow. A product lead - not a salesperson - replies within one business day.</p>
+            <ul class="check-list mt-4">
+              <li>Free 45-minute 1:1 discovery session</li>
+              <li>Scope, stack &amp; timeline you can keep - even if you don't hire us</li>
+              <li>NDA on request, before you share a thing</li>
+            </ul>
+            <div class="d-flex flex-wrap gap-4 mt-5 small">
+              <a href="https://asknovara.tech" class="text-white"><i class="bi bi-globe2 me-2" style="color:var(--signal)"></i>asknovara.tech</a>
+              <span style="color:rgba(255,255,255,.7)"><i class="bi bi-geo-alt me-2" style="color:var(--signal)"></i>London · Serving UK, US &amp; worldwide</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-n reveal">
+              <form id="leadForm" novalidate>
+                <div class="row g-4">
+                  <div class="col-sm-6"><label for="fName">Name *</label><input id="fName" class="form-control" required placeholder="Your full name" /><div class="invalid-feedback">Please add your name.</div></div>
+                  <div class="col-sm-6"><label for="fEmail">Email *</label><input id="fEmail" type="email" class="form-control" required placeholder="you@company.com" /><div class="invalid-feedback">A valid email, please.</div></div>
+                  <div class="col-sm-6"><label for="fCompany">Company</label><input id="fCompany" class="form-control" placeholder="Optional" /></div>
+                  <div class="col-sm-6"><label for="fType">I want to *</label>
+                    <select id="fType" class="form-select" required>
+                      <option value="" selected disabled>Choose one</option>
+                      <option>Build a new SaaS product</option>
+                      <option>Grow / upsell my existing SaaS</option>
+                      <option>Set up cloud infrastructure (IaaS)</option>
+                      <option>Add AI automations</option>
+                    </select><div class="invalid-feedback">Pick what you need.</div></div>
+                  <div class="col-12"><label>Budget range</label>
+                    <div class="budget">
+                      <input type="radio" name="b" id="b1" checked /><label for="b1">£10k-25k</label>
+                      <input type="radio" name="b" id="b2" /><label for="b2">£25k-60k</label>
+                      <input type="radio" name="b" id="b3" /><label for="b3">£60k+</label>
+                      <input type="radio" name="b" id="b4" /><label for="b4">Not sure yet</label>
+                    </div>
+                  </div>
+                  <div class="col-12"><label for="fIdea">Your idea *</label><textarea id="fIdea" class="form-control" rows="3" required placeholder="What should we build together?"></textarea><div class="invalid-feedback">A sentence or two is plenty.</div></div>
+                  <div class="col-12"><button class="btn-n w-100 justify-content-between" type="submit">Book my 1:1 with Novara <span class="ico"><i class="bi bi-arrow-up-right"></i></span></button><p class="form-legal mt-3">We only use these details to reply about your project. See our <a href="privacy.html">Privacy Policy</a>.</p></div>
+                </div>
+              </form>
+              <div class="form-success" id="formOk">
+                <div class="ok"><i class="bi bi-check2 fs-3"></i></div>
+                <h3 class="display" style="font-size:30px">Request received.</h3>
+                <p class="muted mt-2 mb-0">A Novara product lead will reply within one business day.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="#top" class="brand"><span class="word">ask<em>/</em></span><img class="logo-novara" src="assets/img/novara-logo.svg" width="160" height="28" alt="novara" /></a>
+          <p class="mt-4" style="color:rgba(255,255,255,.6);max-width:34ch">The product studio for founders with big ideas and small teams.</p>
+        </div>
+        <div class="col-6 col-lg-2"><h6>Build</h6><ul><li><a href="#build">SaaS</a></li><li><a href="#build">IaaS</a></li><li><a href="#build">AI products</a></li><li><a href="#automations">Automations</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6>Company</h6><ul><li><a href="#about">About</a></li><li><a href="#one-to-one">1:1 sessions</a></li><li><a href="#process">Process</a></li><li><a href="#growth">SaaS growth</a></li><li><a href="#global">Global</a></li><li><a href="#stories">Client stories</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6>Legal</h6><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="cookies.html">Cookie Policy</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6>Follow</h6><div class="social d-flex gap-2"><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a><a href="#" aria-label="X"><i class="bi bi-twitter-x"></i></a><a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a></div></div>
+      </div>
+      <div class="giant" aria-hidden="true">ask<span>.</span>novara</div>
+    </div>
+    <div class="bottom">
+      <div class="wrap d-flex flex-wrap justify-content-between gap-3">
+        <span>© <span id="yr"></span> Ask Novara. All rights reserved.</span>
+        <span class="legal-links d-flex gap-3"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="cookies.html">Cookies</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/globe.gl@2.34.4/dist/globe.gl.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
